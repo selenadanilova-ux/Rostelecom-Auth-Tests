@@ -21,21 +21,21 @@
    git clone https://github.com
    cd название-репозитория
 2. **Создайте и активируйте виртуальное окружение:**
-bash
-python -m venv .venv
-source .venv/bin/activate  # Для macOS/Linux
-.venv\Scripts\activate     # Для Windows
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate  # Для macOS/Linux
+   .venv\Scripts\activate     # Для Windows
 3. **Установите зависимости:**
-bash
-pip install -r requirements.txt
-Настройте переменные окружения:
-4. **Создайте файл .env в корне проекта и добавьте:**
-text
-VALID_EMAIL=ваш_email
-VALID_PASSWORD=ваш_пароль
+   ```bash
+   pip install -r requirements.txt
+4. **Настройте переменные окружения:**
+   Создайте файл .env в корне проекта и добавьте:
+   ```text
+   VALID_EMAIL=ваш_email
+   VALID_PASSWORD=ваш_пароль
 5. **Запустите тесты:**
-bash
-python -m pytest tests/
+   ```bash
+   python -m pytest tests/
 
 ## 📝 Покрытие тестов
 Авторизация по почте/телефону/логину.
